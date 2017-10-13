@@ -4,7 +4,13 @@
 		Problem: Is Unique
 '''
 
-def isUnique(input):
+def isUnique(s):
+	i = 1
+	for c in s:
+		if c in s[i:]:
+			return False
+		i += 1
+	return True
 
 def driver():
 		# Inputs that should return true
